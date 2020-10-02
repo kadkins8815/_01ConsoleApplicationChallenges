@@ -19,6 +19,7 @@ namespace _02_KClaims_Repository
         }
 
         //R
+        
         public List<ClaimClass> GetClaimClassList()
         {
             return _listOfClaimClass;
@@ -50,9 +51,9 @@ namespace _02_KClaims_Repository
         }
 
         //D
-        public bool RemoveClaimFromList(int claimID)
+        public bool DeleteClaimFromList(ClaimClass claimsClass)
         {
-            ClaimClass claim = GetClaimClassByClaimID(claimID);
+            ClaimClass claim = GetClaimClassByClaimID(1);
             if(claim == null)
             {
                 return false;
@@ -78,9 +79,9 @@ namespace _02_KClaims_Repository
             {
                 if(claim.ClaimID == claimID)
                 {
-                    return claim;
-                }
-            }
+                   return claim;
+              }
+           }
 
             return null;
         }

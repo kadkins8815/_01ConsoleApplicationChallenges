@@ -49,11 +49,21 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="ClaimRepositoryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\02_KClaims\02_KClaims.csproj">
+      <Project>{F097C41D-2441-4ACB-8A62-10D7DBC6A00E}</Project>
+      <Name>02_KClaims</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\02_KClaims_Repository\02_KClaims_Repository.csproj">
+      <Project>{128CC8A7-1768-4F8A-9F7E-B6AA43F7BCE8}</Project>
+      <Name>02_KClaims_Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

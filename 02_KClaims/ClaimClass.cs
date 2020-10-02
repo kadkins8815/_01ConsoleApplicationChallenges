@@ -22,6 +22,7 @@ namespace _02_KClaims
         public string DateOfClaim { get; set; }
         public bool IsValid { get; set; }
         public ClaimType TypesOfClaims { get; set; }
+       
 
         public ClaimClass() { }
 
