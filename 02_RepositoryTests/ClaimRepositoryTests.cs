@@ -9,7 +9,7 @@ namespace _02_RepositoryTests
     [TestClass]
     public class ClaimRepositoryTests
     {
-        
+
         [TestMethod]
         public void GetList()
         {
@@ -34,19 +34,6 @@ namespace _02_RepositoryTests
             _repo = new ClaimRepository();
             _content = new ClaimClass(1, "Car accident on 465", 400, "4.25.2018", "4.27.2018", true, ClaimType.Car);
             _repo.AddClaimToList(_content);
-        }
-        
-        [TestMethod]
-        public void Update()
-        {
-            ClaimClass updatedClaim = new ClaimClass(2, "House fire in kitchen", 4000, "4.11.2018", "4.12.2018", true, ClaimType.Home);
-            bool updateResult = _repo.UpdateExistingClaimClass(1, updatedClaim);
-            Assert.IsTrue(updateResult);
-        }
-        [TestMethod]
-        public void DeleteClaimFromList()
-        {
-            Assert.IsTrue(removeResult);
         }
     }
 }
