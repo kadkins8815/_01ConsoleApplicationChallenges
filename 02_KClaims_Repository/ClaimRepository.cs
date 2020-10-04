@@ -26,7 +26,7 @@ namespace _02_KClaims_Repository
         }
 
         //U
-        public bool UpdateExistingClaimClass(int orginalClaimID, ClaimClass newClaimClass)
+        public bool UpdateExistingClaimClass(string orginalClaimID, ClaimClass newClaimClass)
         {
             //Find
             ClaimClass oldClaim = GetClaimClassByClaimID(orginalClaimID);
@@ -53,7 +53,7 @@ namespace _02_KClaims_Repository
         //D
         public bool DeleteClaimFromList(ClaimClass claimsClass)
         {
-            ClaimClass claim = GetClaimClassByClaimID(1);
+            ClaimClass claim = GetClaimClassByClaimID("1");
             if(claim == null)
             {
                 return false;
@@ -73,7 +73,7 @@ namespace _02_KClaims_Repository
         }
 
         //Helper Method
-        private ClaimClass GetClaimClassByClaimID(int claimID)
+        private ClaimClass GetClaimClassByClaimID(string claimID)
         {
             foreach (ClaimClass claim in _listOfClaimClass)
             {

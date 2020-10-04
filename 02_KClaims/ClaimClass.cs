@@ -15,7 +15,7 @@ namespace _02_KClaims
     }
     public class ClaimClass
     {
-        public int ClaimID { get; set; }
+        public string ClaimID { get; set; }
         public string Description { get; set; }
         public double ClaimAmount { get; set; }
         public string DateOfAccident { get; set; }
@@ -26,7 +26,7 @@ namespace _02_KClaims
 
         public ClaimClass() { }
 
-        public ClaimClass(int claimID, string description, double claimAmount, string dateOfAccident, string dateofClaim, bool isValid, ClaimType tOC)
+        public ClaimClass(string claimID, string description, double claimAmount, string dateOfAccident, string dateofClaim, bool isValid, ClaimType tOC)
         {
             ClaimID = claimID;
             Description = description;
