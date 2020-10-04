@@ -99,9 +99,8 @@ namespace _02_IConsole
             newContent.Description = Console.ReadLine();
             
             Console.WriteLine("Enter the claim ID");
-            string ClaimAmountasstring = Console.ReadLine();
-            newContent.ClaimAmount = double.Parse(ClaimAmountasstring);
-            
+            Console.ReadLine();
+
             Console.WriteLine("Enter the claim type:");
             Console.ReadLine();
            
